@@ -1,0 +1,68 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background-color: #111;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00c3ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 4px;
+}
+
+nav ul li a:hover {
+  background-color: #00c3ff;
+  color: #111;
+}
+
+/* Hero Section */
+.hero {
+  padding-top: 100px;
+  height: 400px;
+  background: linear-gradient(to right, #00c3ff, #0072ff);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
